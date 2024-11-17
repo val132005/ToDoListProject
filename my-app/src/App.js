@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeLogged from './pages/HomeLogged';
@@ -20,3 +21,4 @@ const App = () => {
 };
 
 export default App;
+

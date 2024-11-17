@@ -21,6 +21,9 @@ const pages = [
   { name: 'Inicio', path: '/' }, 
 ];
 
+const settings = [
+  { name: 'Iniciar sesion', path: '/login' },];
+
 function ResponsiveAppBarNormal() {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -94,10 +97,16 @@ function ResponsiveAppBarNormal() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              <MenuItem key="Perfil" onClick={handleCloseUserMenu}>
-                <Typography sx={{ textAlign: 'center' }}>Iniciar Sesion</Typography>
-              </MenuItem>
-              
+
+              {settings.map((setting) => (
+                <MenuItem key={setting.name} onClick={handleCloseUserMenu}>
+                  <Typography sx={{ textAlign: 'center' }}>
+                    <Link to={setting.path} style={{ textDecoration: 'none', color: 'black' }}>
+                      {setting.name}
+                    </Link>
+                  </Typography>
+                </MenuItem>
+              ))}
             </Menu>
           </Box>
         </Toolbar>

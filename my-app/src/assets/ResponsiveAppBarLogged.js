@@ -21,9 +21,7 @@ const pages = [
   { name: 'Galeria', path: '/login' }, ];
 const settings = [
   { name: 'Perfil', path: '/login' },
-  { name: 'CerrarSesion', path: '/login' },
-
-  'Perfil', 'Cerrar sesion'];
+  { name: 'Cerrar Sesion', path: '/login' },];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
