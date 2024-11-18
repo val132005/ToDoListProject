@@ -16,12 +16,12 @@ import TaskAltIcon from '@mui/icons-material/TaskAlt'; // Cambiado de AdbIcon a 
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const pages = [
-  { name: 'Inicio', path: '/login' },
-  { name: 'Tareas', path: '/login' },
+  { name: 'Inicio', path: '/homeLogged' },
+  { name: 'Tareas', path: '/homeLogged/todolist' },
   { name: 'Galeria', path: '/login' }, ];
 const settings = [
   { name: 'Perfil', path: '/login' },
-  { name: 'Cerrar Sesion', path: '/login' },];
+  { name: 'Cerrar Sesion', path: '/' },];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

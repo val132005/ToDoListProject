@@ -10,7 +10,7 @@ function HomeLogged() {
   const navigate = useNavigate();
 
   const handleTareasClick = () => {
-    navigate('/'); 
+    navigate('/homeLogged/todolist'); 
   };
 
   const handleGaleriaClick = () => {

@@ -8,11 +8,15 @@ import reportWebVitals from './reportWebVitals';
 //import HomeNonLogged from './pages/HomeNonLogged';
 //import HomeLogged from './pages/HomeLogged';
 import App from './App'
+import { ApolloProvider } from '@apollo/client';
+import client from './config/apolloClient';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
   </React.StrictMode>
 );
 
