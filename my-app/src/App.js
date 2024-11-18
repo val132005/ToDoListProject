@@ -8,7 +8,6 @@ import { ApolloProvider } from '@apollo/client';
 import client from './config/apolloClient';
 import ToDoList from './pages/ToDoList';
 import CreateNewItem from './pages/CreateNewItem.js';
-import EditItem from './pages/EditItem.js';
 
 
 
@@ -18,12 +17,11 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/homeLogged/todolist" element={<ToDoList />} />
-          <Route path="/homeLogged/todolist/edititem" element={<EditItem />} />
           <Route path="/homeLogged/todolist/createnewitem" element={<CreateNewItem />} />
-
           <Route path="/" element={<HomeNonLogged />} />
           <Route path="/login" element={<Login />} />
           <Route path="/homeLogged" element={<HomeLogged />} />
+          <Route path="/toDoList" element={<ToDoList />} />
 
 
         </Routes>
